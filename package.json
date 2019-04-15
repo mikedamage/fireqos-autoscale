@@ -1,0 +1,23 @@
+{
+  "name": "fireqos-autoscale",
+  "description": "Adjust FireQOS up/down speed limits using speedtest.net for bandwidth measurement",
+  "author": "Mike Green <mike.is.green@gmail.com>",
+  "version": "0.1.0",
+  "license": "MIT",
+  "repository": "github:mikedamage/fireqos-autoscale",
+  "keywords": [
+    "fireqos",
+    "traffic shaping",
+    "qos",
+    "speedtest"
+  ],
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "handlebars": "^4.1.2",
+    "ora": "^3.4.0",
+    "speedtest-net": "^1.5.1",
+    "timestring": "^5.0.1",
+    "yargs": "^13.2.2"
+  },
+  "devDependencies": {}
+}
