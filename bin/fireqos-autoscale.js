@@ -3,7 +3,6 @@
 const { createReadStream, appendFile } = require('fs');
 const path = require('path');
 const chalk = require('chalk');
-const Ora = require('ora');
 const argv = require('yargs')
   .config()
   .help()

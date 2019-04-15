@@ -13,8 +13,8 @@
   ],
   "dependencies": {
     "chalk": "^2.4.2",
+    "execa": "^1.0.0",
     "handlebars": "^4.1.2",
-    "ora": "^3.4.0",
     "speedtest-net": "^1.5.1",
     "timestring": "^5.0.1",
     "yargs": "^13.2.2"
