@@ -1,0 +1,13 @@
+[Unit]
+Description=Bandwidth measurement and speed limit adjustment companion tool for FireQOS
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/fireqos-autoscale \
+  -t /usr/local/etc/fireqos-autoscale/fireqos.conf.hbs \
+  -o /usr/local/etc/firehol/fireqos.conf
+WorkingDirectory=/usr/local/etc/firehol
+Restart=always
+
+[Install]
+WantedBy=default.target
