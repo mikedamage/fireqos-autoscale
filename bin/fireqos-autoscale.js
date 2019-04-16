@@ -69,6 +69,14 @@ scaler.on('testError', (err) => {
 
 process.on('SIGINT', () => {
   scaler.stop();
+  process.exit();
+});
+
+process.on('SIGUSR1', () => {
+  scaler.debug('DOWNLOAD MEASUREMENT HISTORY:');
+  scaler.debug.dir(scaler.history.down.entries);
+  scaler.debug('UPLOAD MEASUREMENT HISTORY:');
+  scaler.debug.dir(scaler.history.up.entries);
 });
 
 scaler.start();
