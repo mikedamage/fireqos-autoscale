@@ -62,6 +62,11 @@ const scaler = new Autoscaler({
   averageWindow: argv.window,
 });
 
+scaler.on('testError', (err) => {
+  console.log('Speed test error:');
+  console.log(err);
+});
+
 process.on('SIGINT', () => {
   scaler.stop();
 });
