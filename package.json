@@ -5,6 +5,9 @@
   "version": "0.1.0",
   "license": "MIT",
   "repository": "github:mikedamage/fireqos-autoscale",
+  "bin": {
+    "fireqos-autoscale": "bin/fireqos-autoscale.js"
+  },
   "keywords": [
     "fireqos",
     "traffic shaping",
