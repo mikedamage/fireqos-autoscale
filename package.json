@@ -4,6 +4,7 @@
   "author": "Mike Green <mike.is.green@gmail.com>",
   "version": "0.1.0",
   "license": "MIT",
+  "private": true,
   "repository": "github:mikedamage/fireqos-autoscale",
   "bin": {
     "fireqos-autoscale": "bin/fireqos-autoscale.js"
