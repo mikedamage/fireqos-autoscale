@@ -1,5 +1,7 @@
 [Unit]
 Description=Bandwidth measurement and speed limit adjustment companion tool for FireQOS
+After=fireqos.service
+Wants=fireqos.service
 
 [Service]
 Type=simple
@@ -10,4 +12,4 @@ WorkingDirectory=/usr/local/etc/firehol
 Restart=always
 
 [Install]
-WantedBy=default.target
+WantedBy=multi-user.target
